@@ -138,6 +138,7 @@ const createMainWindow = () => {
       allowRunningInsecureContent: false,
       nodeIntegration: (process.env
         .ELECTRON_NODE_INTEGRATION as unknown) as boolean,
+      contextIsolation: false,
     },
   })
 
