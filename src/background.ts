@@ -135,6 +135,7 @@ const createMainWindow = () => {
     backgroundColor: "#111",
     webPreferences: {
       webSecurity: false,
+      enableRemoteModule: true,
       allowRunningInsecureContent: false,
       nodeIntegration: (process.env
         .ELECTRON_NODE_INTEGRATION as unknown) as boolean,
